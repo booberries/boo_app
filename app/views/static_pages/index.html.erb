@@ -2,3 +2,10 @@
   <h2>Fkin Help</h2>
 </div>
 <hr>
+
+<% Article.last(3).each do |a| %>
+  <h3><%= a.title %></h3>
+  <p><%= a.content.truncate_words(50) %></p>
+  <%= link_to 'Show', a, class: "btn btn-sm btn-outline-secondary" %>
+  <hr>
+<% end %>

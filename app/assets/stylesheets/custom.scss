@@ -6,6 +6,11 @@ a {
   color: #777;
 }
 
+a:hover {
+  text-decoration: none;
+  color: #bbb;
+}
+
 #logo {
   a:hover {
     text-decoration: none;
