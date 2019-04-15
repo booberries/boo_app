@@ -10,6 +10,22 @@
   </head>
 
   <body>
-    <%= yield %>
+    <header class="navbar navbar-fixed-top navbar-inverse">
+      <div class="container">
+        <div id="logo">
+          <%= link_to root_path do %>
+            <h1>Boo-net<span style="color: #777">.dev</span></h1>
+          <% end %>
+        </div>
+        <ul class="nav nav-right ">
+          <li class="nav-item"><%= link_to "Home",   '#' %></li>
+          <li class="nav-item"><%= link_to "Help",   '#' %></li>
+          <li class="nav-item"><%= link_to "Log in", '#' %></li>
+        </ul>
+      </div>
+    </header>
+    <div class="container">
+      <%= yield %>
+    </div>
   </body>
 </html>
