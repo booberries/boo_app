@@ -13,19 +13,31 @@
     <header class="navbar navbar-fixed-top navbar-inverse">
       <div class="container">
         <div id="logo">
-          <%= link_to root_path do %>
+           <%= link_to root_path do %>
             <h1>Boo-net<span style="color: #777">.dev</span></h1>
           <% end %>
         </div>
         <ul class="nav nav-right ">
           <li class="nav-item"><%= link_to "Home",   '#' %></li>
-          <li class="nav-item"><%= link_to "Help",   '#' %></li>
-          <li class="nav-item"><%= link_to "Log in", '#' %></li>
+          <li class="nav-item"><%= link_to "Projects",   '#' %></li>
+          <li class="nav-item"><%= link_to "Blog", '#' %></li>
         </ul>
       </div>
     </header>
     <div class="container">
       <%= yield %>
+      <footer class="footer">
+        <small>
+        <a href="#">Boo-net.dev</a>
+        </small>
+        <nav>
+          <ul>
+            <li><%= link_to "Home",   '#' %></li>
+            <li><%= link_to "Projects", '#' %></li>
+            <li><%= link_to "Blog", '#' %></li>
+          </ul>
+        </nav>
+      </footer>
     </div>
   </body>
 </html>
